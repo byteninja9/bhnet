@@ -27,7 +27,7 @@ def usage():
                                         
                 Recreated By Byteninja9
     ''')
-    print("Usage: bhpnet.py -t target_host -p port")
+    print("Usage: bhnet.py -t target_host -p port")
     print('''-l --listen                         - listen  on [host]:[port] for 
                                                    incoming connections''')
     print('''-e --execute=file_to_run            - execute the given file upon  
@@ -38,10 +38,10 @@ def usage():
     print()
 
     print(Style.BRIGHT + Fore.GREEN + "Examples: ")
-    print("bhpnet.py -t 192.168.0.1 -p 5555 -l -c")
-    print("bhpnet.py -t 192.168.0.1 -p 5555 -l -c -u=c:\\target.exe")
-    print("bhpnet.py -t 192.168.0.1 -p 5555 -l -e=\"cat /etc/passwd\"")
-    print("echo 'ABCDEFGH' | ./bhpnet.py -t 192.168.0.1 -p 135")
+    print("bhnet.py -t 192.168.0.1 -p 5555 -l -c")
+    print("bhnet.py -t 192.168.0.1 -p 5555 -l -c -u=c:\\target.exe")
+    print("bhnet.py -t 192.168.0.1 -p 5555 -l -e=\"cat /etc/passwd\"")
+    print("echo 'ABCDEFGH' | ./bhnet.py -t 192.168.0.1 -p 135")
     sys.exit(0)
 
 def client_sender(buffer):
