@@ -29,15 +29,15 @@ Usage: bhnet.py -t target_host -p port
 
 - Start a server to listen for incoming connections and open a command shell:
 ```bash 
-python bhpnet.py -t 192.168.0.1 -p 5555 -l -c
+python bhnet.py -t 192.168.0.1 -p 5555 -l -c
 ```
 - Upload a file from the client to the server:
 ```bash
-python bhpnet.py -t 192.168.0.1 -p 5555 -l -u=c:\target.exe 
+python bhnet.py -t 192.168.0.1 -p 5555 -l -u=c:\target.exe 
 ```
 - Execute a command on the server:
 ```bash 
-python bhpnet.py -t 192.168.0.1 -p 5555 -l -e="cat /etc/passwd"
+python bhnet.py -t 192.168.0.1 -p 5555 -l -e="cat /etc/passwd"
 ```
 
 
